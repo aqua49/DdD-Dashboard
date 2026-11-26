@@ -1,56 +1,64 @@
-# sv
+# D&D DM Helper
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A Dungeon Master dashboard designed to make running Dungeons & Dragons campaigns easier. Built with SvelteKit and TypeScript.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Campaign Management
+- Create and organize campaigns.
+- Organize campaigns into arcs and parts.
+- Keep track of important campaign information.
+- Automatically save changes.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+### Combat Management
+- Create and manage creature stat blocks.
+- Track initiative during combat.
+- Manage combat encounters.
+- Roll dice.
 
-To recreate this project with the same configuration:
+### Battle Maps
+- Create customizable battle grids.
+- Add and move creature and player tokens.
+- Customize token names and colors.
 
-```sh
-# recreate this project
-npx sv@1.4.0 create --template minimal --types ts --install npm dnd-dm-manager
-```
+## Technologies
+- SvelteKit
+- TypeScript
+- HTML
+- CSS
 
-## Adding features
+## Installation
 
-Add features to your project with `sv add`:
+**Requirements:** Node.js and npm.
 
-```sh
-npx sv add
-```
+1. Clone the repository:
 
-For example, to add Tailwind CSS:
+   ```bash
+   git clone https://github.com/aqua49/DdD-Dashboard.git
+   ```
 
-```sh
-npx sv add tailwindcss
-```
+2. Enter the project folder:
 
-## Developing
+   ```bash
+   cd DdD-Dashboard
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+3. Install dependencies:
 
-```sh
-npm run dev
+   ```bash
+   npm install
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. Start the development server:
 
-## Building
+   ```bash
+   npm run dev
+   ```
 
-To create a production version of your app:
+## Development Status
 
-```sh
-npm run build
-```
+This project is actively being developed. New features, improvements, and bug fixes are ongoing.
 
-You can preview the production build with `npm run preview`.
+## License
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+License information coming soon.

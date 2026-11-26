@@ -18,10 +18,20 @@
     };
 
     onMount(() => {
-        loadCampaigns();
-        const stopAutoSave = startAutoSave();
-        return () => stopAutoSave();
-    });
+    let stopAutoSave: (() => void) | undefined;
+
+    loadCampaigns()
+        .then(() => {
+            stopAutoSave = startAutoSave();
+        })
+        .catch((error) => {
+            console.error("Campaign loading failed:", error);
+        });
+
+    return () => {
+        stopAutoSave?.();
+    };
+});
 
     let expandedCampaignId = $state<string | null>(null);
     let expandedArcId = $state<string | null>(null);
